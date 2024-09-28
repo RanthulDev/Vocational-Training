@@ -74,7 +74,7 @@ const Jobs = () => {
       <div className="jobs-for-you">
         <div className="job-background">
           <div className="title">
-            <h2>Our Jobs</h2>
+            <h2>Our Courses</h2>
           </div>
         </div>
         <div className="job-section">

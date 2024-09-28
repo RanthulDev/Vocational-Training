@@ -15,9 +15,42 @@ else{
 
 }
   }
+  const courseDetails = {
+    title: "Web Development",
+    description: "Learn to build dynamic websites using modern web technologies.",
+    duration: "3 Months",
+    companyName: "Tech Academy",
+    nvqLevel: "Level 3",
+    startDate: "2024-01-15"
+  };
+  const handleApplyClick = () => {
+    // Navigate to the job application page
+    navigate("/Jobs");
+  };
   return (
     <div className="apply-job">
       <div className="container">
+        <div>
+        <header className="header">
+          <h1 className="post-job">Details About Courses </h1>
+        </header>
+        <div className="course-details">
+          <h2>{courseDetails.title}</h2>
+          <p><strong>Description:</strong> {courseDetails.description}</p>
+          <p><strong>Duration:</strong> {courseDetails.duration}</p>
+          <p><strong>Company Name:</strong> {courseDetails.companyName}</p>
+          <p><strong>NVQ Level:</strong> {courseDetails.nvqLevel}</p>
+          <p><strong>Start Date:</strong> {new Date(courseDetails.startDate).toLocaleDateString()}</p>
+        </div>
+
+        {/* Button to Apply for the Job */}
+        <div className="form-group">
+          <button className="apply-button" onClick={handleApplyClick}>
+            Apply for this Course
+          </button>
+        </div>
+        </div>
+
         <header className="header">
           <h1 className="post-job">Fill the form </h1>
         </header>
